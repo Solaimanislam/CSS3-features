@@ -10,12 +10,35 @@
                 left: 0;
             }
             to{
-                left: 400px;
+                left: 600px;
                 background-color: yellow;
             }
         }
+        @keyframes bounce {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                left: 150px;
+                top: 200px;
+                background-color: red;
+
+            }
+            50%{
+                left: 300px;
+                top: 0;
+                background-color: yellow;
+            }
+            100%{
+                left: 500px;
+                top: 200px;
+                background-color: green;
+
+            }
+        }
         .stage {
-            width: 500px;
+            width: 600px;
             height: 300px;
             border: 2px solid steelblue;
             background-color: aquamarine;
@@ -26,7 +49,8 @@
             background-color: rebeccapurple;
             border-radius: 50%;
             position: relative;
-            animation: ping-pong 2s ease-in-out 1s infinite alternate ;
+            /* animation: ping-pong 2s ease-in-out 1s infinite alternate ; */
+            animation: bounce 3s ease-in-out 1s infinite alternate ;
         }
     </style>
 </head>
